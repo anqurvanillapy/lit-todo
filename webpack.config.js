@@ -29,7 +29,7 @@ module.exports = {
     ]
   },
   plugins: [
-    // new webpack.NoEmitOnErrorsPlugin(),
+    new webpack.NoEmitOnErrorsPlugin(),
   ].concat(IS_DEV ? [] : [
     new webpack.optimize.UglifyJsPlugin({
       compress: true,
