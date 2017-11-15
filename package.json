@@ -1,0 +1,41 @@
+{
+  "name": "lit-todo",
+  "version": "0.1.0",
+  "description": "a todo app by lit-html",
+  "main": "index.js",
+  "scripts": {
+    "prebuild": "tslint --project tsconfig.json",
+    "start": "webpack-dev-server",
+    "build": "webpack",
+    "release": "cross-env NODE_ENV=production webpack",
+    "clean": "rimraf ./dist",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/anqurvanillapy/lit-todo.git"
+  },
+  "keywords": [
+    "todo"
+  ],
+  "author": "AnqurVanillapy",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/anqurvanillapy/lit-todo/issues"
+  },
+  "homepage": "https://github.com/anqurvanillapy/lit-todo#readme",
+  "devDependencies": {
+    "awesome-typescript-loader": "^3.3.0",
+    "cross-env": "^5.1.1",
+    "rimraf": "^2.6.2",
+    "source-map-loader": "^0.2.3",
+    "tslint": "^5.8.0",
+    "tslint-config-standard": "^7.0.0",
+    "typescript": "^2.6.1",
+    "webpack": "^3.8.1",
+    "webpack-dev-server": "^2.9.4"
+  },
+  "dependencies": {
+    "lit-html": "^0.7.1"
+  }
+}
